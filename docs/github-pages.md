@@ -11,6 +11,8 @@
 
 工作流权限：build 仅读取仓库，deploy 使用 `pages:write` 和 `id-token:write`。不需要交易密钥或额外仓库 Secrets。不配置定时任务；后续推送或手动触发工作流时更新发布快照。
 
+本项目发布到公开仓库 `Menglayer/BorosSpread`，实际发布分支为 `master`。`github-pages` 环境仅允许该分支部署。将来如调整默认分支，应同时调整环境的分支策略。
+
 构建只发布 `dist/` 下的 HTML/CSS/JS、图标和 `data/bootstrap.json`。研究目录、测试、文档截图和开发脚本不进入网页部署产物。发布源码的可见性由仓库可见性决定，和 Pages 的公开访问是两个概念。
 
 ## 行情与缓存

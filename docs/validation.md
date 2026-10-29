@@ -30,4 +30,15 @@
 
 本版不模拟账户保证金、不接入钱包、不下单；深度是官方分桶数据估算，不能保证两腿原子成交。尚未完成外部永续四腿交易和完整净收益核算。
 
-GitHub 远程发布状态需在实际发布后另外记录；本地验收不代表线上验收。
+## GitHub Pages 线上验收
+
+- 公开仓库：https://github.com/Menglayer/BorosSpread ，默认分支 master。
+- 正式地址：https://menglayer.github.io/BorosSpread/ 。
+- 应用发布提交：`6fff9aa9432da2f62f92054e009eb7aef3e25dfa`。
+- 首次 Actions 运行：https://github.com/Menglayer/BorosSpread/actions/runs/40810964605 ，build 与 deploy 最终均为 success。
+- 首页、CSS、应用 JS、图标及两个逻辑模块全部 HTTP 200，SHA-256 与本地构建一致。
+- Actions 生成的线上回退快照时间为 `2026-10-29T03:14:05.632Z`，49 个市场，optionalFailures 为空。
+- 在 GitHub Pages 正式 URL 的实际浏览器截图中确认页面成功渲染，并显示绿色“官方行情 · 60s 刷新”；行情更新时间持续推进。
+- 正式页面不依赖本机预览服务器。用户访问时会请求实时数据，浏览器无法连接官方 API 时使用带时间标记的回退快照。
+
+后续仅更新文档不会改变上述应用资源；以仓库 Actions 页确认最新一次部署结果。

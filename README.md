@@ -2,7 +2,9 @@
 
 以 Boros 双腿价差为主，并观察外部交易所实际资金费率的看板项目。
 
-纯静态、无需交易密钥的 Boros 价差研究看板，可部署到 GitHub Pages。浏览器直接读取 Boros 官方公开 API；失败时回退到带原始时间的快照。当前未发布到远程仓库。
+纯静态、无需交易密钥的 Boros 价差研究看板。浏览器直接读取 Boros 官方公开 API；失败时回退到带原始时间的快照。
+
+[打开看板](https://menglayer.github.io/BorosSpread/) · [源码仓库](https://github.com/Menglayer/BorosSpread) · [部署状态](https://github.com/Menglayer/BorosSpread/actions/workflows/pages.yml)
 
 ## 功能
 
