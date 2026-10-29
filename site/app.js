@@ -131,7 +131,7 @@ function renderChart() {
     $('#chart-stats').innerHTML = ''; return;
   }
   const stats = historyStats(series);
-  const W = 640, H = 206, L = 7, R = 57, T = 14, B = 29;
+  const W = Math.max(220, $('#history-chart').clientWidth), H = W >= 500 ? 260 : 220, L = 7, R = 65, T = 16, B = 32;
   const minTs = series[0].ts, maxTs = series.at(-1).ts;
   const padding = Math.max((stats.max - stats.min) * .2, .0005);
   const lo = stats.min - padding, hi = stats.max + padding;
@@ -139,9 +139,9 @@ function renderChart() {
   const y = value => T + (hi - value) / (hi - lo) * (H - T - B);
   const d = series.map((r, i) => `${i ? 'L' : 'M'}${x(r.ts).toFixed(2)},${y(r.value).toFixed(2)}`).join(' ');
   const area = `${d} L${x(maxTs)},${H - B} L${L},${H - B} Z`;
-  const lines = Array.from({ length: 4 }, (_, i) => { const value = lo + (hi - lo) * i / 3; return `<line x1="${L}" x2="${W - R}" y1="${y(value)}" y2="${y(value)}" stroke="#2a3d45" stroke-width=".7" stroke-dasharray="3 5"/><text x="${W - R + 11}" y="${y(value) + 3}" fill="#6c8997" font-family="Consolas,monospace" font-size="9">${fmt(value)}</text>`; }).join('');
-  const labels = [0, .25, .5, .75, 1].map(v => { const ts = minTs + (maxTs - minTs) * v; return `<text x="${x(ts)}" y="${H - 5}" text-anchor="${v === 0 ? 'start' : v === 1 ? 'end' : 'middle'}" fill="#587887" font-family="Consolas,monospace" font-size="9">${state.days === 1 ? time(ts, false) : time(ts).slice(0, 5)}</text>`; }).join('');
-  $('#history-chart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(pairLabel(pair))} 最近 ${state.days} 天的 Mark APR 差历史，共 ${series.length} 个对齐样本"><defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7ae6ac" stop-opacity=".18"/><stop offset="100%" stop-color="#7ae6ac" stop-opacity="0"/></linearGradient></defs>${lines}<path d="${area}" fill="url(#chart-fill)"/><path d="${d}" fill="none" stroke="#90e9ba" stroke-width="1.8" stroke-linejoin="round"/><circle cx="${x(maxTs)}" cy="${y(series.at(-1).value)}" r="3" fill="#abf2cb"/>${labels}</svg><div class="chart-tooltip" hidden></div>`;
+  const lines = Array.from({ length: 4 }, (_, i) => { const value = lo + (hi - lo) * i / 3; return `<line x1="${L}" x2="${W - R}" y1="${y(value)}" y2="${y(value)}" stroke="#d9e4e9" stroke-width="1" stroke-dasharray="3 5"/><text x="${W - R + 11}" y="${y(value) + 4}" fill="#607886" font-family="Consolas,monospace" font-size="12">${fmt(value)}</text>`; }).join('');
+  const labels = (W < 340 ? [0, .5, 1] : [0, .25, .5, .75, 1]).map(v => { const ts = minTs + (maxTs - minTs) * v; return `<text x="${x(ts)}" y="${H - 5}" text-anchor="${v === 0 ? 'start' : v === 1 ? 'end' : 'middle'}" fill="#607886" font-family="Consolas,monospace" font-size="12">${state.days === 1 ? time(ts, false) : time(ts).slice(0, 5)}</text>`; }).join('');
+  $('#history-chart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(pairLabel(pair))} 最近 ${state.days} 天的 Mark APR 差历史，共 ${series.length} 个对齐样本"><defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a9d6a" stop-opacity=".17"/><stop offset="100%" stop-color="#1a9d6a" stop-opacity="0"/></linearGradient></defs>${lines}<path d="${area}" fill="url(#chart-fill)"/><path d="${d}" fill="none" stroke="#087c55" stroke-width="2.2" stroke-linejoin="round"/><circle cx="${x(maxTs)}" cy="${y(series.at(-1).value)}" r="3.5" fill="#087c55"/>${labels}</svg><div class="chart-tooltip" hidden></div>`;
   const first = series[0].ts, last = series.at(-1).ts;
   $('#chart-stats').innerHTML = `<div><span>窗口平均差</span><strong>${signed(stats.mean)}</strong></div><div><span>窗口最低 / 最高</span><strong>${fmt(stats.min)} / ${fmt(stats.max)}</strong></div><div><span>${series.length} 个样本 · ${state.days === 30 ? '日频' : '小时频'}</span><strong>${time(last)} 更新</strong></div>`;
   const historyA = state.history.get(`${pair.a.marketId}:${state.days}`);
@@ -276,6 +276,11 @@ function switchView(view) {
   if (view === 'funding') loadFunding();
 }
 document.addEventListener('click', event => {
+  if (event.target.closest('[data-action="copy-code"]')) {
+    if (navigator.clipboard?.writeText) navigator.clipboard.writeText('MENGX').then(() => toast('邀请码 MENGX 已复制 · 获得 10% 手续费减免')).catch(() => toast('邀请码：MENGX，可选中邀请码复制'));
+    else toast('邀请码：MENGX，可选中邀请码复制');
+    return;
+  }
   const star = event.target.closest('[data-star]');
   if (star) {
     const id = star.dataset.star;
@@ -303,6 +308,8 @@ function updateAmount() {
   $$('.amount-presets button').forEach(b => b.classList.toggle('active', b.dataset.amount === state.amount)); renderQuote();
 }
 $('#notional').addEventListener('input', updateAmount);
+let chartResizeTimer;
+window.addEventListener('resize', () => { clearTimeout(chartResizeTimer); chartResizeTimer = setTimeout(renderChart, 150); });
 $('#search').addEventListener('input', event => { state.search = event.target.value; state.page = 0; renderTable(); });
 $('#sort').addEventListener('change', event => { state.sort = event.target.value; state.page = 0; renderTable(); });
 $('#expiry').addEventListener('change', event => { const next = state.groups.find(g => g.underlying === state.asset && g.maturity === Number(event.target.value) && g.tokenId === currentGroup()?.tokenId) ?? state.groups.find(g => g.underlying === state.asset && g.maturity === Number(event.target.value)); chooseGroup(next?.key); renderAll(); setHash(); loadDetails(); });

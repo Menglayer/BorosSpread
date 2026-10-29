@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0d1418">
+  <meta name="theme-color" content="#f3f6f8">
   <meta name="description" content="Boros 全市场资金费率价差看板。比较跨交易所合成价差、原生价差、双腿深度与实际资金费率。">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api-boros.pendle.finance; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>BorosSpread · 价差观察站</title>
@@ -29,22 +29,26 @@
     <a class="brand" href="./" aria-label="BorosSpread 首页"><img src="./favicon.svg" width="35" height="35" alt=""><span>BOROS<span class="brand-light">SPREAD</span><small>价差观察站</small></span></a>
     <div class="nav-label">工作台 / WORKSPACE</div>
     <nav aria-label="主导航">
-      <button class="nav-item active" data-view="spreads"><svg><use href="#i-grid"/></svg><span>全市场价差</span><span class="nav-count" id="nav-count">—</span></button>
-      <button class="nav-item" data-view="native"><svg><use href="#i-layers"/></svg><span>原生 / 合成对比</span></button>
-      <button class="nav-item" data-view="funding"><svg><use href="#i-matrix"/></svg><span>资金费率矩阵</span></button>
-      <button class="nav-item" data-view="favorites"><svg><use href="#i-star"/></svg><span>我的关注</span></button>
+      <button class="nav-item active" data-view="spreads" aria-label="全市场价差" title="全市场价差"><svg><use href="#i-grid"/></svg><span>全市场价差</span><span class="nav-count" id="nav-count">—</span></button>
+      <button class="nav-item" data-view="native" aria-label="原生 / 合成对比"><svg><use href="#i-layers"/></svg><span class="nav-label-full">原生 / 合成对比</span><span class="nav-label-short" aria-hidden="true">原生对比</span></button>
+      <button class="nav-item" data-view="funding" aria-label="资金费率矩阵" title="资金费率矩阵"><svg><use href="#i-matrix"/></svg><span>资金费率矩阵</span></button>
+      <button class="nav-item" data-view="favorites" aria-label="我的关注" title="我的关注"><svg><use href="#i-star"/></svg><span>我的关注</span></button>
     </nav>
     <div class="sidebar-bottom"><div class="read-only"><span class="tiny-dot"></span>公开行情 · 无需连接钱包</div><p>看清利率的另一面。<br>发现价差，理解风险。</p><button class="method-button" data-action="method"><svg><use href="#i-info"/></svg>计算口径与数据来源<svg><use href="#i-arrow"/></svg></button><a href="https://boros.pendle.finance/" target="_blank" rel="noopener noreferrer">打开 Boros 官方交易页 ↗</a><div class="sidebar-foot">INDEPENDENT RESEARCH DASHBOARD</div></div>
   </aside>
   <div class="workspace">
-    <header class="topbar"><div class="breadcrumb">工作台 <span>/</span> <strong id="breadcrumb">全市场价差</strong></div><div class="top-actions"><span id="feed-status" class="feed-status"><i></i>正在连接行情</span><button class="icon-button" id="refresh" aria-label="刷新行情" title="刷新行情"><svg><use href="#i-refresh"/></svg></button><button class="help-button" data-action="method" aria-label="计算说明"><svg><use href="#i-info"/></svg></button></div></header>
+    <header class="topbar"><div class="breadcrumb"><span class="breadcrumb-root">工作台</span><span class="breadcrumb-separator">/</span><strong id="breadcrumb">全市场价差</strong></div><div class="top-actions"><span id="feed-status" class="feed-status"><i></i>正在连接行情</span><button class="icon-button" id="refresh" aria-label="刷新行情" title="刷新行情"><svg><use href="#i-refresh"/></svg></button><button class="help-button" data-action="method" aria-label="计算说明"><svg><use href="#i-info"/></svg></button></div></header>
     <main id="main" tabindex="-1">
+      <section class="invite-banner" aria-label="Boros 邀请福利">
+        <div class="invite-copy"><span class="invite-eyebrow">MENGX · BOROS 邀请福利</span><h2>获得 <strong>10%</strong> 手续费减免</h2><p>通过专属邀请链接加入 Boros，使用邀请码 MENGX。</p></div>
+        <div class="invite-actions"><div class="invite-code"><span>邀请码</span><strong>MENGX</strong><button type="button" data-action="copy-code" aria-label="复制邀请码 MENGX">复制</button></div><a class="invite-cta" href="https://boros.pendle.finance/join/MENGX" target="_blank" rel="noopener noreferrer">领取手续费减免 <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </section>
       <section class="page-heading"><div><div class="eyebrow"><span></span> THE RATE BETWEEN</div><h1 id="page-title">跨交易所，<span>发现价差。</span></h1><p id="page-subtitle">连接 Boros 单腿市场，让每一种费率差都有迹可循。</p></div><div class="heading-side"><span class="network-dot"></span> Arbitrum <span class="divider">/</span> 只读观察<span id="last-updated">等待数据</span></div></section>
       <div id="notice" class="notice" role="status" hidden></div>
       <section class="metrics" aria-label="市场概览" id="metrics"><div class="metric"><span>合成价差组合 <small>PAIRS</small></span><strong>—</strong><p>正在获取市场数据</p></div><div class="metric"><span>交易所覆盖 <small>VENUES</small></span><strong>—</strong><p>公开市场动态发现</p></div><div class="metric"><span>原生价差市场 <small>NATIVE</small></span><strong>—</strong><p>独立订单簿与保证金</p></div><div class="metric"><span>当前分组最大参考差 <small>SPREAD</small></span><strong>—</strong><p>盘口参考 · 非收益承诺</p></div></section>
       <section class="market-toolbar" aria-label="行情筛选"><div class="asset-tabs" id="asset-tabs" role="group" aria-label="标的"><button data-asset="BTC" class="active"><span class="coin btc">₿</span>BTC</button><button data-asset="ETH"><span class="coin eth">Ξ</span>ETH</button><button data-asset="HYPE"><span class="coin hype">H</span>HYPE</button></div><div class="group-controls"><label>到期日<select id="expiry" aria-label="到期日"></select></label><label>抵押品<select id="collateral" aria-label="抵押品"></select></label></div></section>
       <section id="spreads-view">
-        <div class="panel table-panel"><div class="panel-heading"><div><h2 id="table-title">全部合成价差 <span id="pair-count" class="count-badge">—</span></h2><p>固定方向 A − B · 同标的、同抵押品、同到期日</p></div><button id="export" class="text-button"><svg><use href="#i-download"/></svg><span>导出 CSV</span></button></div>
+        <div class="panel table-panel"><div class="panel-heading"><div><h2 id="table-title">全部合成价差 <span id="pair-count" class="count-badge">—</span></h2><p>固定方向 A − B · 同标的、同抵押品、同到期日</p></div><button id="export" class="text-button" aria-label="导出 CSV"><svg><use href="#i-download"/></svg><span>导出 CSV</span></button></div>
           <div class="table-tools"><label class="search"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="搜索交易所或组合" aria-label="搜索交易所或组合" autocomplete="off"></label><div class="sort-control"><label for="sort">排序</label><select id="sort"><option value="bid">做空参考差 ↓</option><option value="mid">中间价差 ↓</option><option value="name">交易所名称</option></select></div></div>
           <div id="spread-table" aria-live="polite"><div class="empty-state">正在读取 Boros 公开市场…</div></div>
           <div class="table-bottom"><span id="table-summary">—</span><div class="pagination"><button id="prev" aria-label="上一页">←</button><span id="page-number">1 / 1</span><button id="next" aria-label="下一页">→</button></div></div>
