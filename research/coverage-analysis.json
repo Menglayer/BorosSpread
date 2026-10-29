@@ -1,0 +1,2200 @@
+{
+  "asOf": "2026-10-29T02:15:50.1643532+00:00",
+  "schemaVersion": "20261028.0824-45b0191",
+  "totalHistoricalAndCurrentMarkets": 242,
+  "pages": 3,
+  "syncStatuses": [
+    {
+      "blockNumber": 519231821,
+      "timestamp": 1793240109
+    },
+    {
+      "blockNumber": 519231969,
+      "timestamp": 1793240148
+    },
+    {
+      "blockNumber": 519231973,
+      "timestamp": 1793240149
+    }
+  ],
+  "futureUiMarkets": 49,
+  "normalFundingMarkets": 45,
+  "normalNativeSpreadMarkets": 4,
+  "fundingVenues": [
+    "Binance",
+    "Bybit",
+    "Gate",
+    "Hyperliquid",
+    "KuCoin",
+    "Lighter",
+    "OKX"
+  ],
+  "fundingRateSymbols": 82,
+  "underlyingObservationVenues": [
+    "Binance",
+    "Bitget",
+    "Bybit",
+    "Deribit",
+    "Gate",
+    "Hyperliquid",
+    "Kucoin",
+    "Lighter",
+    "OKX"
+  ],
+  "candidateUnorderedPairs": 94,
+  "candidateDirections": 188,
+  "groups": [
+    {
+      "key": "BRENTOIL:3:1794960000",
+      "underlying": "BRENTOIL",
+      "collateralTokenId": 3,
+      "collateral": "USD₮0",
+      "maturity": 1794960000,
+      "maturityUtc": "2026-11-18T00:00:00.000Z",
+      "venues": [
+        "Hyperliquid"
+      ],
+      "marketIds": [
+        226
+      ],
+      "pairCount": 0
+    },
+    {
+      "key": "BTC:1:1793318400",
+      "underlying": "BTC",
+      "collateralTokenId": 1,
+      "collateral": "WBTC",
+      "maturity": 1793318400,
+      "maturityUtc": "2026-10-30T00:00:00.000Z",
+      "venues": [
+        "Binance",
+        "Gate",
+        "Hyperliquid",
+        "KuCoin",
+        "Lighter",
+        "OKX"
+      ],
+      "marketIds": [
+        202,
+        205,
+        201,
+        203,
+        214,
+        204
+      ],
+      "pairCount": 15
+    },
+    {
+      "key": "BTC:1:1795737600",
+      "underlying": "BTC",
+      "collateralTokenId": 1,
+      "collateral": "WBTC",
+      "maturity": 1795737600,
+      "maturityUtc": "2026-11-27T00:00:00.000Z",
+      "venues": [
+        "Binance",
+        "Gate",
+        "Hyperliquid",
+        "KuCoin",
+        "Lighter",
+        "OKX"
+      ],
+      "marketIds": [
+        221,
+        222,
+        220,
+        224,
+        215,
+        223
+      ],
+      "pairCount": 15
+    },
+    {
+      "key": "BTC:1:1798156800",
+      "underlying": "BTC",
+      "collateralTokenId": 1,
+      "collateral": "WBTC",
+      "maturity": 1798156800,
+      "maturityUtc": "2026-12-25T00:00:00.000Z",
+      "venues": [
+        "Binance",
+        "Gate",
+        "Hyperliquid",
+        "KuCoin",
+        "Lighter",
+        "OKX"
+      ],
+      "marketIds": [
+        237,
+        227,
+        229,
+        238,
+        239,
+        240
+      ],
+      "pairCount": 15
+    },
+    {
+      "key": "BTC:3:1793318400",
+      "underlying": "BTC",
+      "collateralTokenId": 3,
+      "collateral": "USD₮0",
+      "maturity": 1793318400,
+      "maturityUtc": "2026-10-30T00:00:00.000Z",
+      "venues": [
+        "Hyperliquid"
+      ],
+      "marketIds": [
+        206
+      ],
+      "pairCount": 0
+    },
+    {
+      "key": "BTC:3:1795737600",
+      "underlying": "BTC",
+      "collateralTokenId": 3,
+      "collateral": "USD₮0",
+      "maturity": 1795737600,
+      "maturityUtc": "2026-11-27T00:00:00.000Z",
+      "venues": [
+        "Hyperliquid"
+      ],
+      "marketIds": [
+        219
+      ],
+      "pairCount": 0
+    },
+    {
+      "key": "BTC:3:1798156800",
+      "underlying": "BTC",
+      "collateralTokenId": 3,
+      "collateral": "USD₮0",
+      "maturity": 1798156800,
+      "maturityUtc": "2026-12-25T00:00:00.000Z",
+      "venues": [
+        "Hyperliquid"
+      ],
+      "marketIds": [
+        241
+      ],
+      "pairCount": 0
+    },
+    {
+      "key": "ETH:2:1793318400",
+      "underlying": "ETH",
+      "collateralTokenId": 2,
+      "collateral": "WETH",
+      "maturity": 1793318400,
+      "maturityUtc": "2026-10-30T00:00:00.000Z",
+      "venues": [
+        "Binance",
+        "Gate",
+        "Hyperliquid",
+        "KuCoin",
+        "Lighter",
+        "OKX"
+      ],
+      "marketIds": [
+        197,
+        200,
+        196,
+        207,
+        199,
+        198
+      ],
+      "pairCount": 15
+    },
+    {
+      "key": "ETH:2:1795737600",
+      "underlying": "ETH",
+      "collateralTokenId": 2,
+      "collateral": "WETH",
+      "maturity": 1795737600,
+      "maturityUtc": "2026-11-27T00:00:00.000Z",
+      "venues": [
+        "Binance",
+        "Gate",
+        "Hyperliquid",
+        "KuCoin",
+        "Lighter",
+        "OKX"
+      ],
+      "marketIds": [
+        210,
+        211,
+        209,
+        225,
+        212,
+        213
+      ],
+      "pairCount": 15
+    },
+    {
+      "key": "ETH:2:1798156800",
+      "underlying": "ETH",
+      "collateralTokenId": 2,
+      "collateral": "WETH",
+      "maturity": 1798156800,
+      "maturityUtc": "2026-12-25T00:00:00.000Z",
+      "venues": [
+        "Binance",
+        "Gate",
+        "Hyperliquid",
+        "KuCoin",
+        "Lighter",
+        "OKX"
+      ],
+      "marketIds": [
+        129,
+        228,
+        128,
+        236,
+        235,
+        234
+      ],
+      "pairCount": 15
+    },
+    {
+      "key": "HYPE:3:1793318400",
+      "underlying": "HYPE",
+      "collateralTokenId": 3,
+      "collateral": "USD₮0",
+      "maturity": 1793318400,
+      "maturityUtc": "2026-10-30T00:00:00.000Z",
+      "venues": [
+        "Bybit",
+        "Gate",
+        "Hyperliquid"
+      ],
+      "marketIds": [
+        218,
+        217,
+        216
+      ],
+      "pairCount": 3
+    },
+    {
+      "key": "HYPE:3:1795737600",
+      "underlying": "HYPE",
+      "collateralTokenId": 3,
+      "collateral": "USD₮0",
+      "maturity": 1795737600,
+      "maturityUtc": "2026-11-27T00:00:00.000Z",
+      "venues": [
+        "Bybit",
+        "Hyperliquid"
+      ],
+      "marketIds": [
+        231,
+        230
+      ],
+      "pairCount": 1
+    }
+  ],
+  "pairs": [
+    {
+      "id": "129-228",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 129,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 228,
+        "venue": "Gate"
+      },
+      "referenceMidSpreadApr": 0.0028308009784249466,
+      "referenceMarkSpreadApr": 0.0013645000859984005,
+      "unalignedFloatingDifferenceApr": -0.04641705,
+      "referenceShortSpreadApr": 0.0009445594127529475,
+      "referenceLongSpreadApr": 0.0052425748939192995,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "129-128",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 129,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 128,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.02745026099595055,
+      "referenceMarkSpreadApr": -0.02745026099595055,
+      "unalignedFloatingDifferenceApr": 0.083636538,
+      "referenceShortSpreadApr": -0.027765303087926053,
+      "referenceLongSpreadApr": -0.02574783340769137,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "129-236",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 129,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 236,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.006533263461243638,
+      "referenceMarkSpreadApr": -0.006109427193145223,
+      "unalignedFloatingDifferenceApr": 0.00723795,
+      "referenceShortSpreadApr": -0.008433550761900652,
+      "referenceLongSpreadApr": -0.004107443810764264,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "129-235",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 129,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 235,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.01966495614825535,
+      "referenceMarkSpreadApr": -0.019611351045298195,
+      "unalignedFloatingDifferenceApr": -0.08912205,
+      "referenceShortSpreadApr": -0.020461481240981648,
+      "referenceLongSpreadApr": -0.018342898705706677,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "129-234",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 129,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 234,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.0016830050430788057,
+      "referenceMarkSpreadApr": -0.0006303677856392548,
+      "unalignedFloatingDifferenceApr": -0.0642092207275995,
+      "referenceShortSpreadApr": -0.0035760171434433274,
+      "referenceLongSpreadApr": 0.0007355394071080698,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "228-128",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 228,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 128,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.030281061974375495,
+      "referenceMarkSpreadApr": -0.02881476108194895,
+      "unalignedFloatingDifferenceApr": 0.130053588,
+      "referenceShortSpreadApr": -0.03185226144807198,
+      "referenceLongSpreadApr": -0.02784800935421769,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "228-236",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 228,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 236,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.009364064439668585,
+      "referenceMarkSpreadApr": -0.007473927279143623,
+      "unalignedFloatingDifferenceApr": 0.05365500000000001,
+      "referenceShortSpreadApr": -0.01252050912204658,
+      "referenceLongSpreadApr": -0.006207619757290582,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "228-235",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 228,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 235,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.022495757126680296,
+      "referenceMarkSpreadApr": -0.020975851131296595,
+      "unalignedFloatingDifferenceApr": -0.042704999999999986,
+      "referenceShortSpreadApr": -0.024548439601127577,
+      "referenceLongSpreadApr": -0.020443074652232995,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "228-234",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 228,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 234,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.004513806021503752,
+      "referenceMarkSpreadApr": -0.0019948678716376553,
+      "unalignedFloatingDifferenceApr": -0.017792170727599498,
+      "referenceShortSpreadApr": -0.007662975503589256,
+      "referenceLongSpreadApr": -0.0013646365394182486,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "128-236",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 128,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 236,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.02091699753470691,
+      "referenceMarkSpreadApr": 0.021340833802805326,
+      "unalignedFloatingDifferenceApr": -0.076398588,
+      "referenceShortSpreadApr": 0.01846989917956409,
+      "referenceLongSpreadApr": 0.02250224274338842,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "128-235",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 128,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 235,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": 0.007785304847695199,
+      "referenceMarkSpreadApr": 0.007838909950652354,
+      "unalignedFloatingDifferenceApr": -0.172758588,
+      "referenceShortSpreadApr": 0.0064419687004830944,
+      "referenceLongSpreadApr": 0.008266787848446006,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "128-234",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 128,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 234,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.025767255952871743,
+      "referenceMarkSpreadApr": 0.026819893210311294,
+      "unalignedFloatingDifferenceApr": -0.1478457587275995,
+      "referenceShortSpreadApr": 0.023327432798021415,
+      "referenceLongSpreadApr": 0.027345225961260752,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "236-235",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 236,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 235,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.013131692687011712,
+      "referenceMarkSpreadApr": -0.013501923852152972,
+      "unalignedFloatingDifferenceApr": -0.09635999999999999,
+      "referenceShortSpreadApr": -0.015198420896444013,
+      "referenceLongSpreadApr": -0.011064964477579396,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "236-234",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 236,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 234,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.004850258418164832,
+      "referenceMarkSpreadApr": 0.005479059407505968,
+      "unalignedFloatingDifferenceApr": -0.0714471707275995,
+      "referenceShortSpreadApr": 0.001687043201094307,
+      "referenceLongSpreadApr": 0.00801347363523535,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "235-234",
+      "group": "ETH:2:1798156800",
+      "legA": {
+        "marketId": 235,
+        "venue": "Lighter"
+      },
+      "legB": {
+        "marketId": 234,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.017981951105176544,
+      "referenceMarkSpreadApr": 0.01898098325965894,
+      "unalignedFloatingDifferenceApr": 0.02491282927240049,
+      "referenceShortSpreadApr": 0.01592249809603672,
+      "referenceLongSpreadApr": 0.020041404114316347,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "197-200",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 197,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 200,
+        "venue": "Gate"
+      },
+      "referenceMidSpreadApr": -0.0024903001997566357,
+      "referenceMarkSpreadApr": -0.005769904633906496,
+      "unalignedFloatingDifferenceApr": -0.04641705,
+      "referenceShortSpreadApr": -0.0072051647252533435,
+      "referenceLongSpreadApr": 0.002224564325740079,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "197-196",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 197,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 196,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.020568665199429098,
+      "referenceMarkSpreadApr": -0.01998770515085345,
+      "unalignedFloatingDifferenceApr": 0.083636538,
+      "referenceShortSpreadApr": -0.025433889617449273,
+      "referenceLongSpreadApr": -0.01570344078140893,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "197-207",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 197,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 207,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.004507062112800858,
+      "referenceMarkSpreadApr": -0.008853926510376864,
+      "unalignedFloatingDifferenceApr": 0.00723795,
+      "referenceShortSpreadApr": -0.009014124225601716,
+      "referenceLongSpreadApr": 0,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "197-199",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 197,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 199,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.031190506692604147,
+      "referenceMarkSpreadApr": -0.03483216389672278,
+      "unalignedFloatingDifferenceApr": -0.08912205,
+      "referenceShortSpreadApr": -0.03499236161194763,
+      "referenceLongSpreadApr": -0.02738865177326067,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "197-198",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 197,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 198,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.013097577802225119,
+      "referenceMarkSpreadApr": -0.016227826481030744,
+      "unalignedFloatingDifferenceApr": -0.0642092207275995,
+      "referenceShortSpreadApr": -0.018105193135167855,
+      "referenceLongSpreadApr": -0.008089962469282362,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "200-196",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 200,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 196,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.018078364999672462,
+      "referenceMarkSpreadApr": -0.014217800516946953,
+      "unalignedFloatingDifferenceApr": 0.130053588,
+      "referenceShortSpreadApr": -0.02321399185851998,
+      "referenceLongSpreadApr": -0.012942738140824958,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "200-207",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 200,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 207,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.0020167619130442224,
+      "referenceMarkSpreadApr": -0.003084021876470368,
+      "unalignedFloatingDifferenceApr": 0.05365500000000001,
+      "referenceShortSpreadApr": -0.006794226466672423,
+      "referenceLongSpreadApr": 0.0027607026405839716,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "200-199",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 200,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 199,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.028700206492847512,
+      "referenceMarkSpreadApr": -0.029062259262816283,
+      "unalignedFloatingDifferenceApr": -0.042704999999999986,
+      "referenceShortSpreadApr": -0.03277246385301834,
+      "referenceLongSpreadApr": -0.0246279491326767,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "200-198",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 200,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 198,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.010607277602468483,
+      "referenceMarkSpreadApr": -0.010457921847124248,
+      "unalignedFloatingDifferenceApr": -0.017792170727599498,
+      "referenceShortSpreadApr": -0.015885295376238562,
+      "referenceLongSpreadApr": -0.0053292598286983905,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "196-207",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 196,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 207,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.01606160308662824,
+      "referenceMarkSpreadApr": 0.011133778640476585,
+      "unalignedFloatingDifferenceApr": -0.076398588,
+      "referenceShortSpreadApr": 0.011133778640476585,
+      "referenceLongSpreadApr": 0.0209894275327799,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "196-199",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 196,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 199,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.01062184149317505,
+      "referenceMarkSpreadApr": -0.01484445874586933,
+      "unalignedFloatingDifferenceApr": -0.172758588,
+      "referenceShortSpreadApr": -0.01484445874586933,
+      "referenceLongSpreadApr": -0.006399224240480769,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "196-198",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 196,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 198,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.007471087397203979,
+      "referenceMarkSpreadApr": 0.0037598786698227055,
+      "unalignedFloatingDifferenceApr": -0.1478457587275995,
+      "referenceShortSpreadApr": 0.002042709730910447,
+      "referenceLongSpreadApr": 0.01289946506349754,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "207-199",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 207,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 199,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.02668344457980329,
+      "referenceMarkSpreadApr": -0.025978237386345915,
+      "unalignedFloatingDifferenceApr": -0.09635999999999999,
+      "referenceShortSpreadApr": -0.03054789952727826,
+      "referenceLongSpreadApr": -0.022818989632328326,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "207-198",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 207,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 198,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.00859051568942426,
+      "referenceMarkSpreadApr": -0.00737389997065388,
+      "unalignedFloatingDifferenceApr": -0.0714471707275995,
+      "referenceShortSpreadApr": -0.013660731050498483,
+      "referenceLongSpreadApr": -0.003520300328350018,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "199-198",
+      "group": "ETH:2:1793318400",
+      "legA": {
+        "marketId": 199,
+        "venue": "Lighter"
+      },
+      "legB": {
+        "marketId": 198,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.01809292889037903,
+      "referenceMarkSpreadApr": 0.018604337415692035,
+      "unalignedFloatingDifferenceApr": 0.02491282927240049,
+      "referenceShortSpreadApr": 0.013727920722762188,
+      "referenceLongSpreadApr": 0.022457937057995897,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "202-205",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 202,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 205,
+        "venue": "Gate"
+      },
+      "referenceMidSpreadApr": 0.01714820144779039,
+      "referenceMarkSpreadApr": 0.02082837684690917,
+      "unalignedFloatingDifferenceApr": -0.031065149999999996,
+      "referenceShortSpreadApr": 0.01327757032064808,
+      "referenceLongSpreadApr": 0.02101883257493268,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "202-201",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 202,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 201,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.010909619370301299,
+      "referenceMarkSpreadApr": -0.007280010620441563,
+      "unalignedFloatingDifferenceApr": -0.08143515,
+      "referenceShortSpreadApr": -0.016064458056126815,
+      "referenceLongSpreadApr": -0.00575478068447581,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "202-203",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 202,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 203,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.007483328523634675,
+      "referenceMarkSpreadApr": 0.011954088917014438,
+      "unalignedFloatingDifferenceApr": -0.006975150000000003,
+      "referenceShortSpreadApr": 0.0030125681302548973,
+      "referenceLongSpreadApr": 0.011954088917014438,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "202-214",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 202,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 214,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.010745195292389376,
+      "referenceMarkSpreadApr": -0.010008952111023456,
+      "unalignedFloatingDifferenceApr": -0.07705514999999999,
+      "referenceShortSpreadApr": -0.015517850618386439,
+      "referenceLongSpreadApr": -0.005972539966392312,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "202-204",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 202,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 204,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.009196019842398845,
+      "referenceMarkSpreadApr": 0.011954088917014438,
+      "unalignedFloatingDifferenceApr": -0.0580639776701415,
+      "referenceShortSpreadApr": 0.0036570217671832855,
+      "referenceLongSpreadApr": 0.01473501791761439,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "205-201",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 205,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 201,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.02805782081809169,
+      "referenceMarkSpreadApr": -0.028108387467350733,
+      "unalignedFloatingDifferenceApr": -0.050370000000000005,
+      "referenceShortSpreadApr": -0.03157439212369651,
+      "referenceLongSpreadApr": -0.024541249512486873,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "205-203",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 205,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 203,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.009664872924155715,
+      "referenceMarkSpreadApr": -0.008874287929894732,
+      "unalignedFloatingDifferenceApr": 0.024089999999999993,
+      "referenceShortSpreadApr": -0.012497365937314799,
+      "referenceLongSpreadApr": -0.006832379910996625,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "205-214",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 205,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 214,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.027893396740179766,
+      "referenceMarkSpreadApr": -0.030837328957932626,
+      "unalignedFloatingDifferenceApr": -0.045989999999999996,
+      "referenceShortSpreadApr": -0.031027784685956135,
+      "referenceLongSpreadApr": -0.024759008794403375,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "205-204",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 205,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 204,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.007952181605391545,
+      "referenceMarkSpreadApr": -0.008874287929894732,
+      "unalignedFloatingDifferenceApr": -0.026998827670141508,
+      "referenceShortSpreadApr": -0.01185291230038641,
+      "referenceLongSpreadApr": -0.004051450910396673,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "201-203",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 201,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 203,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.018392947893935974,
+      "referenceMarkSpreadApr": 0.019234099537456,
+      "unalignedFloatingDifferenceApr": 0.07446,
+      "referenceShortSpreadApr": 0.01427624732209369,
+      "referenceLongSpreadApr": 0.02250964846577827,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "201-214",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 201,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 214,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": 0.00016442407791192326,
+      "referenceMarkSpreadApr": -0.002728941490581893,
+      "unalignedFloatingDifferenceApr": 0.004380000000000009,
+      "referenceShortSpreadApr": -0.0042541714265476455,
+      "referenceLongSpreadApr": 0.00458301958237152,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "201-204",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 201,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 204,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.020105639212700144,
+      "referenceMarkSpreadApr": 0.019234099537456,
+      "unalignedFloatingDifferenceApr": 0.023371172329858497,
+      "referenceShortSpreadApr": 0.014920700959022079,
+      "referenceLongSpreadApr": 0.025290577466378222,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "203-214",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 203,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 214,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.01822852381602405,
+      "referenceMarkSpreadApr": -0.021963041028037894,
+      "unalignedFloatingDifferenceApr": -0.07007999999999999,
+      "referenceShortSpreadApr": -0.021963041028037894,
+      "referenceLongSpreadApr": -0.014494006604010193,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "203-204",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 203,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 204,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.0017126913187641701,
+      "referenceMarkSpreadApr": 0,
+      "unalignedFloatingDifferenceApr": -0.0510888276701415,
+      "referenceShortSpreadApr": -0.0027881686424681695,
+      "referenceLongSpreadApr": 0.00621355127999651,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "214-204",
+      "group": "BTC:1:1793318400",
+      "legA": {
+        "marketId": 214,
+        "venue": "Lighter"
+      },
+      "legB": {
+        "marketId": 204,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.01994121513478822,
+      "referenceMarkSpreadApr": 0.021963041028037894,
+      "unalignedFloatingDifferenceApr": 0.01899117232985849,
+      "referenceShortSpreadApr": 0.015138460240938581,
+      "referenceLongSpreadApr": 0.024743970028637846,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "210-211",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 210,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 211,
+        "venue": "Gate"
+      },
+      "referenceMidSpreadApr": 0.006345190699040257,
+      "referenceMarkSpreadApr": 0.007299070341542355,
+      "unalignedFloatingDifferenceApr": -0.04641705,
+      "referenceShortSpreadApr": 0.0040139480132612634,
+      "referenceLongSpreadApr": 0.008676433384819264,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "210-209",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 210,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 209,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.022015060462407268,
+      "referenceMarkSpreadApr": -0.01992846816554017,
+      "unalignedFloatingDifferenceApr": 0.08077201799999999,
+      "referenceShortSpreadApr": -0.02548990436788401,
+      "referenceLongSpreadApr": -0.018540216556930535,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "210-225",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 210,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 225,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.004497863300496285,
+      "referenceMarkSpreadApr": 0.004554607486072781,
+      "unalignedFloatingDifferenceApr": 0.00723795,
+      "referenceShortSpreadApr": 0.0008463096823408955,
+      "referenceLongSpreadApr": 0.008149416918651675,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "210-212",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 210,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 212,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.014949692877872137,
+      "referenceMarkSpreadApr": -0.012707185991627415,
+      "unalignedFloatingDifferenceApr": -0.08912205,
+      "referenceShortSpreadApr": -0.019114312918653953,
+      "referenceLongSpreadApr": -0.010785072837090313,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "210-213",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 210,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 213,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.0020687756235919577,
+      "referenceMarkSpreadApr": -0.0021251041868697584,
+      "unalignedFloatingDifferenceApr": -0.0642092207275995,
+      "referenceShortSpreadApr": -0.005623934498934932,
+      "referenceLongSpreadApr": 0.0014863832517510236,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "211-209",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 211,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 209,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.028360251161447525,
+      "referenceMarkSpreadApr": -0.027227538507082524,
+      "unalignedFloatingDifferenceApr": 0.127189068,
+      "referenceShortSpreadApr": -0.03003086884731286,
+      "referenceLongSpreadApr": -0.02668963347558221,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "211-225",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 211,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 225,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.0018473273985439714,
+      "referenceMarkSpreadApr": -0.0027444628554695732,
+      "unalignedFloatingDifferenceApr": 0.05365500000000001,
+      "referenceShortSpreadApr": -0.0036946547970879567,
+      "referenceLongSpreadApr": 0,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "211-212",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 211,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 212,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.021294883576912393,
+      "referenceMarkSpreadApr": -0.02000625633316977,
+      "unalignedFloatingDifferenceApr": -0.042704999999999986,
+      "referenceShortSpreadApr": -0.023655277398082805,
+      "referenceLongSpreadApr": -0.01893448975574199,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "211-213",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 211,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 213,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.008413966322632215,
+      "referenceMarkSpreadApr": -0.009424174528412113,
+      "unalignedFloatingDifferenceApr": -0.017792170727599498,
+      "referenceShortSpreadApr": -0.010164898978363784,
+      "referenceLongSpreadApr": -0.0066630336669006515,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "209-225",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 209,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 225,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.026512923762903554,
+      "referenceMarkSpreadApr": 0.02448307565161295,
+      "unalignedFloatingDifferenceApr": -0.073534068,
+      "referenceShortSpreadApr": 0.023521995144661842,
+      "referenceLongSpreadApr": 0.029503852381145272,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "209-212",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 209,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 212,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": 0.007065367584535132,
+      "referenceMarkSpreadApr": 0.007221282173912755,
+      "unalignedFloatingDifferenceApr": -0.16989406799999998,
+      "referenceShortSpreadApr": 0.0035613725436669935,
+      "referenceLongSpreadApr": 0.010569362625403284,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "209-213",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 209,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 213,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.01994628483881531,
+      "referenceMarkSpreadApr": 0.01780336397867041,
+      "unalignedFloatingDifferenceApr": -0.1449812387275995,
+      "referenceShortSpreadApr": 0.017051750963386014,
+      "referenceLongSpreadApr": 0.02284081871424462,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "225-212",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 225,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 212,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.019447556178368422,
+      "referenceMarkSpreadApr": -0.017261793477700196,
+      "unalignedFloatingDifferenceApr": -0.09635999999999999,
+      "referenceShortSpreadApr": -0.023128260931915216,
+      "referenceLongSpreadApr": -0.01576685142482162,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "225-213",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 225,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 213,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.006566638924088243,
+      "referenceMarkSpreadApr": -0.00667971167294254,
+      "unalignedFloatingDifferenceApr": -0.0714471707275995,
+      "referenceShortSpreadApr": -0.009637882512196196,
+      "referenceLongSpreadApr": -0.0034953953359802836,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "212-213",
+      "group": "ETH:2:1795737600",
+      "legA": {
+        "marketId": 212,
+        "venue": "Lighter"
+      },
+      "legB": {
+        "marketId": 213,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.012880917254280179,
+      "referenceMarkSpreadApr": 0.010582081804757656,
+      "unalignedFloatingDifferenceApr": 0.02491282927240049,
+      "referenceShortSpreadApr": 0.009296607243545793,
+      "referenceLongSpreadApr": 0.016465227265014565,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "221-222",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 221,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 222,
+        "venue": "Gate"
+      },
+      "referenceMidSpreadApr": 0.007187261035163095,
+      "referenceMarkSpreadApr": 0.008351899258242229,
+      "unalignedFloatingDifferenceApr": -0.031065149999999996,
+      "referenceShortSpreadApr": 0.005916479127016913,
+      "referenceLongSpreadApr": 0.00845804294330927,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "221-220",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 221,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 220,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.022885011341855693,
+      "referenceMarkSpreadApr": -0.02198291696102913,
+      "unalignedFloatingDifferenceApr": -0.08143515,
+      "referenceShortSpreadApr": -0.02519250909365727,
+      "referenceLongSpreadApr": -0.020577513590054122,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "221-224",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 221,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 224,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.005263119722930171,
+      "referenceMarkSpreadApr": -0.0031889322303025394,
+      "unalignedFloatingDifferenceApr": -0.006975150000000003,
+      "referenceShortSpreadApr": -0.007869194801716502,
+      "referenceLongSpreadApr": -0.0026570446441438605,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "221-215",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 221,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 215,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.020126011076685213,
+      "referenceMarkSpreadApr": -0.019494038055918254,
+      "unalignedFloatingDifferenceApr": -0.07705514999999999,
+      "referenceShortSpreadApr": -0.022484228431295293,
+      "referenceLongSpreadApr": -0.017767793722075126,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "221-223",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 221,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 223,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.007289806148234296,
+      "referenceMarkSpreadApr": -0.004893611789888973,
+      "unalignedFloatingDifferenceApr": -0.0580639776701415,
+      "referenceShortSpreadApr": -0.009792144191646666,
+      "referenceLongSpreadApr": -0.004787468104821932,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "222-220",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 222,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 220,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.03007227237701879,
+      "referenceMarkSpreadApr": -0.03033481621927136,
+      "unalignedFloatingDifferenceApr": -0.050370000000000005,
+      "referenceShortSpreadApr": -0.03163563591362039,
+      "referenceLongSpreadApr": -0.028508908840417187,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "222-224",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 222,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 224,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.012450380758093266,
+      "referenceMarkSpreadApr": -0.011540831488544769,
+      "unalignedFloatingDifferenceApr": 0.024089999999999993,
+      "referenceShortSpreadApr": -0.01431232162167962,
+      "referenceLongSpreadApr": -0.010588439894506925,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "222-215",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 222,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 215,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.027313272111848308,
+      "referenceMarkSpreadApr": -0.027845937314160484,
+      "unalignedFloatingDifferenceApr": -0.045989999999999996,
+      "referenceShortSpreadApr": -0.02892735525125841,
+      "referenceLongSpreadApr": -0.02569918897243819,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "222-223",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 222,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 223,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.01447706718339739,
+      "referenceMarkSpreadApr": -0.013245511048131202,
+      "unalignedFloatingDifferenceApr": -0.026998827670141508,
+      "referenceShortSpreadApr": -0.016235271011609785,
+      "referenceLongSpreadApr": -0.012718863355184996,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "220-224",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 220,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 224,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.017621891618925523,
+      "referenceMarkSpreadApr": 0.01879398473072659,
+      "unalignedFloatingDifferenceApr": 0.07446,
+      "referenceShortSpreadApr": 0.014723234911683772,
+      "referenceLongSpreadApr": 0.02052054832616726,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "220-215",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 220,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 215,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": 0.0027590002651704804,
+      "referenceMarkSpreadApr": 0.002488878905110875,
+      "unalignedFloatingDifferenceApr": 0.004380000000000009,
+      "referenceShortSpreadApr": 0.00010820128210498048,
+      "referenceLongSpreadApr": 0.005409799248235994,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "220-223",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 220,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 223,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.015595205193621398,
+      "referenceMarkSpreadApr": 0.017089305171140157,
+      "unalignedFloatingDifferenceApr": 0.023371172329858497,
+      "referenceShortSpreadApr": 0.012800285521753607,
+      "referenceLongSpreadApr": 0.018390124865489188,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "224-215",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 224,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 215,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.014862891353755042,
+      "referenceMarkSpreadApr": -0.016305105825615715,
+      "unalignedFloatingDifferenceApr": -0.07007999999999999,
+      "referenceShortSpreadApr": -0.01781226766380528,
+      "referenceLongSpreadApr": -0.011913515043704775,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "224-223",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 224,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 223,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.002026686425304125,
+      "referenceMarkSpreadApr": -0.0017046795595864334,
+      "unalignedFloatingDifferenceApr": -0.0510888276701415,
+      "referenceShortSpreadApr": -0.005120183424156655,
+      "referenceLongSpreadApr": 0.0010668105735484185,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "215-223",
+      "group": "BTC:1:1795737600",
+      "legA": {
+        "marketId": 215,
+        "venue": "Lighter"
+      },
+      "legB": {
+        "marketId": 223,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.012836204928450917,
+      "referenceMarkSpreadApr": 0.014600426266029282,
+      "unalignedFloatingDifferenceApr": 0.01899117232985849,
+      "referenceShortSpreadApr": 0.00999056565377461,
+      "referenceLongSpreadApr": 0.01568184420312721,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "218-217",
+      "group": "HYPE:3:1793318400",
+      "legA": {
+        "marketId": 218,
+        "venue": "Bybit"
+      },
+      "legB": {
+        "marketId": 217,
+        "venue": "Gate"
+      },
+      "referenceMidSpreadApr": 0.044539743499540194,
+      "referenceMarkSpreadApr": 0.05222007757098172,
+      "unalignedFloatingDifferenceApr": -0.00029564999999999453,
+      "referenceShortSpreadApr": 0.03521763423465986,
+      "referenceLongSpreadApr": 0.053861852764420515,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "218-216",
+      "group": "HYPE:3:1793318400",
+      "legA": {
+        "marketId": 218,
+        "venue": "Bybit"
+      },
+      "legB": {
+        "marketId": 216,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.017060055366099197,
+      "referenceMarkSpreadApr": -0.011827066769153072,
+      "unalignedFloatingDifferenceApr": -0.05427477,
+      "referenceShortSpreadApr": -0.025125897674736455,
+      "referenceLongSpreadApr": -0.008994213057461953,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "217-216",
+      "group": "HYPE:3:1793318400",
+      "legA": {
+        "marketId": 217,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 216,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.06159979886563939,
+      "referenceMarkSpreadApr": -0.06404714434013478,
+      "unalignedFloatingDifferenceApr": -0.053979120000000005,
+      "referenceShortSpreadApr": -0.06568891953357359,
+      "referenceLongSpreadApr": -0.057510678197705195,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "237-227",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 237,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 227,
+        "venue": "Gate"
+      },
+      "referenceMidSpreadApr": 0.0036683345415486346,
+      "referenceMarkSpreadApr": 0.0037720107642605152,
+      "unalignedFloatingDifferenceApr": -0.031065149999999996,
+      "referenceShortSpreadApr": 0.0016769514995571139,
+      "referenceLongSpreadApr": 0.005659717583540169,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "237-229",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 237,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 229,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.02717164814662662,
+      "referenceMarkSpreadApr": -0.028188030813226503,
+      "unalignedFloatingDifferenceApr": -0.08143515,
+      "referenceShortSpreadApr": -0.029461603554233808,
+      "referenceLongSpreadApr": -0.024881692739019426,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "237-238",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 237,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 238,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.004102408732595805,
+      "referenceMarkSpreadApr": -0.003890964739328741,
+      "unalignedFloatingDifferenceApr": -0.006975150000000003,
+      "referenceShortSpreadApr": -0.005679560804386544,
+      "referenceLongSpreadApr": -0.002525256660805067,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "237-239",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 237,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 239,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.025396251824643973,
+      "referenceMarkSpreadApr": -0.02592690987586989,
+      "unalignedFloatingDifferenceApr": -0.07705514999999999,
+      "referenceShortSpreadApr": -0.027952907935487638,
+      "referenceLongSpreadApr": -0.022839595713800287,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "237-240",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 237,
+        "venue": "Binance"
+      },
+      "legB": {
+        "marketId": 240,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.0032078867331372524,
+      "referenceMarkSpreadApr": -0.0031537316869796675,
+      "unalignedFloatingDifferenceApr": -0.0580639776701415,
+      "referenceShortSpreadApr": -0.0057850273559358276,
+      "referenceLongSpreadApr": -0.0006307461103386633,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "227-229",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 227,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 229,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.030839982688175255,
+      "referenceMarkSpreadApr": -0.03196004157748702,
+      "unalignedFloatingDifferenceApr": -0.050370000000000005,
+      "referenceShortSpreadApr": -0.03312645326613632,
+      "referenceLongSpreadApr": -0.028553512110214195,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "227-238",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 227,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 238,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": -0.00777074327414444,
+      "referenceMarkSpreadApr": -0.007662975503589256,
+      "unalignedFloatingDifferenceApr": 0.024089999999999993,
+      "referenceShortSpreadApr": -0.009344410516289058,
+      "referenceLongSpreadApr": -0.006197076031999836,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "227-239",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 227,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 239,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.029064586366192607,
+      "referenceMarkSpreadApr": -0.029698920640130404,
+      "unalignedFloatingDifferenceApr": -0.045989999999999996,
+      "referenceShortSpreadApr": -0.03161775764739015,
+      "referenceLongSpreadApr": -0.026511415084995056,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "227-240",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 227,
+        "venue": "Gate"
+      },
+      "legB": {
+        "marketId": 240,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": -0.006876221274685887,
+      "referenceMarkSpreadApr": -0.006925742451240183,
+      "unalignedFloatingDifferenceApr": -0.026998827670141508,
+      "referenceShortSpreadApr": -0.009449877067838341,
+      "referenceLongSpreadApr": -0.0043025654815334324,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "229-238",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 229,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 238,
+        "venue": "KuCoin"
+      },
+      "referenceMidSpreadApr": 0.023069239414030815,
+      "referenceMarkSpreadApr": 0.024297066073897762,
+      "unalignedFloatingDifferenceApr": 0.07446,
+      "referenceShortSpreadApr": 0.021196999806270538,
+      "referenceLongSpreadApr": 0.024941479021791085,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "229-239",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 229,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 239,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": 0.0017753963219826474,
+      "referenceMarkSpreadApr": 0.0022611209373566143,
+      "unalignedFloatingDifferenceApr": 0.004380000000000009,
+      "referenceShortSpreadApr": -0.0010763473248305566,
+      "referenceLongSpreadApr": 0.004627139968795865,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "229-240",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 229,
+        "venue": "Hyperliquid"
+      },
+      "legB": {
+        "marketId": 240,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.023963761413489368,
+      "referenceMarkSpreadApr": 0.025034299126246835,
+      "unalignedFloatingDifferenceApr": 0.023371172329858497,
+      "referenceShortSpreadApr": 0.021091533254721254,
+      "referenceLongSpreadApr": 0.02683598957225749,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "238-239",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 238,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 239,
+        "venue": "Lighter"
+      },
+      "referenceMidSpreadApr": -0.021293843092048167,
+      "referenceMarkSpreadApr": -0.022035945136541148,
+      "unalignedFloatingDifferenceApr": -0.07007999999999999,
+      "referenceShortSpreadApr": -0.023432783403044916,
+      "referenceLongSpreadApr": -0.0191549027810514,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "238-240",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 238,
+        "venue": "KuCoin"
+      },
+      "legB": {
+        "marketId": 240,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.0008945219994585529,
+      "referenceMarkSpreadApr": 0.0007372330523490733,
+      "unalignedFloatingDifferenceApr": -0.0510888276701415,
+      "referenceShortSpreadApr": -0.0012649028234931053,
+      "referenceLongSpreadApr": 0.003053946822410225,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "239-240",
+      "group": "BTC:1:1798156800",
+      "legA": {
+        "marketId": 239,
+        "venue": "Lighter"
+      },
+      "legB": {
+        "marketId": 240,
+        "venue": "OKX"
+      },
+      "referenceMidSpreadApr": 0.02218836509150672,
+      "referenceMarkSpreadApr": 0.02277317818889022,
+      "unalignedFloatingDifferenceApr": 0.01899117232985849,
+      "referenceShortSpreadApr": 0.019049436229502115,
+      "referenceLongSpreadApr": 0.02532729395351132,
+      "classification": "matched-candidate-not-size-validated"
+    },
+    {
+      "id": "231-230",
+      "group": "HYPE:3:1795737600",
+      "legA": {
+        "marketId": 231,
+        "venue": "Bybit"
+      },
+      "legB": {
+        "marketId": 230,
+        "venue": "Hyperliquid"
+      },
+      "referenceMidSpreadApr": -0.04299023562540462,
+      "referenceMarkSpreadApr": -0.03976052944894417,
+      "unalignedFloatingDifferenceApr": -0.05427477,
+      "referenceShortSpreadApr": -0.046219941801865075,
+      "referenceLongSpreadApr": -0.03976052944894417,
+      "classification": "matched-candidate-not-size-validated"
+    }
+  ],
+  "nativeComparisons": [
+    {
+      "marketId": 232,
+      "name": "Hyperliquid ETH - Gate ETHUSDT 27 Nov 2026",
+      "legAMarketId": 209,
+      "legBMarketId": 211,
+      "nativeBidApr": 0.03210376555826525,
+      "nativeAskApr": 0.033859790257558364,
+      "syntheticBidApr": 0.02668963347558221,
+      "syntheticAskApr": 0.03003086884731286,
+      "sellNativeBuySyntheticReferenceApr": 0.002072896710952392,
+      "sellSyntheticBuyNativeReferenceApr": -0.007170156781976154,
+      "classification": "reference-before-fees-depth-and-epoch-adjustments"
+    },
+    {
+      "marketId": 233,
+      "name": "Hyperliquid BTC - Gate BTCUSDT 27 Nov 2026",
+      "legAMarketId": 220,
+      "legBMarketId": 222,
+      "nativeBidApr": 0.030556809090914853,
+      "nativeAskApr": 0.031175313246586404,
+      "syntheticBidApr": 0.028508908840417187,
+      "syntheticAskApr": 0.03163563591362039,
+      "sellNativeBuySyntheticReferenceApr": -0.0010788268227055371,
+      "sellSyntheticBuyNativeReferenceApr": -0.002666404406169217,
+      "classification": "reference-before-fees-depth-and-epoch-adjustments"
+    },
+    {
+      "marketId": 242,
+      "name": "Hyperliquid ETH - Gate ETHUSDT 25 Dec 2026",
+      "legAMarketId": 128,
+      "legBMarketId": 228,
+      "nativeBidApr": 0.02952679312582355,
+      "nativeAskApr": 0.03014467910193508,
+      "syntheticBidApr": 0.02784800935421769,
+      "syntheticAskApr": 0.03185226144807198,
+      "sellNativeBuySyntheticReferenceApr": -0.0023254683222484335,
+      "sellSyntheticBuyNativeReferenceApr": -0.002296669747717389,
+      "classification": "reference-before-fees-depth-and-epoch-adjustments"
+    },
+    {
+      "marketId": 243,
+      "name": "Hyperliquid BTC - Gate BTCUSDT 25 Dec 2026",
+      "legAMarketId": 229,
+      "legBMarketId": 227,
+      "nativeBidApr": 0.029012171260887305,
+      "nativeAskApr": 0.03035072349044073,
+      "syntheticBidApr": 0.028553512110214195,
+      "syntheticAskApr": 0.03312645326613632,
+      "sellNativeBuySyntheticReferenceApr": -0.004114282005249017,
+      "sellSyntheticBuyNativeReferenceApr": -0.0017972113802265342,
+      "classification": "reference-before-fees-depth-and-epoch-adjustments"
+    }
+  ],
+  "settlementReconciliation": [
+    {
+      "timestamp": 1793232000,
+      "hlPrints": 8,
+      "derivedApr": 0.06241499999999951,
+      "nativeApr": 0.062415000000000005,
+      "residualApr": -4.926614671774132e-16
+    },
+    {
+      "timestamp": 1793203200,
+      "hlPrints": 8,
+      "derivedApr": 0.021899999999999503,
+      "nativeApr": 0.021900000000000003,
+      "residualApr": -4.996003610813204e-16
+    },
+    {
+      "timestamp": 1793174400,
+      "hlPrints": 8,
+      "derivedApr": 0.02933242199999951,
+      "nativeApr": 0.029332422,
+      "residualApr": -4.891920202254596e-16
+    },
+    {
+      "timestamp": 1793145600,
+      "hlPrints": 8,
+      "derivedApr": -4.996003610813204e-16,
+      "nativeApr": 0,
+      "residualApr": -4.996003610813204e-16
+    },
+    {
+      "timestamp": 1793116800,
+      "hlPrints": 8,
+      "derivedApr": 0.019709999999999506,
+      "nativeApr": 0.019710000000000002,
+      "residualApr": -4.961309141293668e-16
+    }
+  ],
+  "depthSamples": [
+    {
+      "marketId": 220,
+      "collateral": "WBTC",
+      "takerAction": "short-YU-hit-bids",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.08075488990319218,
+      "syncStatus": {
+        "blockNumber": 519232288,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    },
+    {
+      "marketId": 220,
+      "collateral": "WBTC",
+      "takerAction": "long-YU-lift-asks",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.08631483510038264,
+      "syncStatus": {
+        "blockNumber": 519232288,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    },
+    {
+      "marketId": 221,
+      "collateral": "WBTC",
+      "takerAction": "short-YU-hit-bids",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.058049135802469135,
+      "syncStatus": {
+        "blockNumber": 519232289,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    },
+    {
+      "marketId": 221,
+      "collateral": "WBTC",
+      "takerAction": "long-YU-lift-asks",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.061500000000000006,
+      "syncStatus": {
+        "blockNumber": 519232289,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    },
+    {
+      "marketId": 222,
+      "collateral": "WBTC",
+      "takerAction": "short-YU-hit-bids",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.05250006879721209,
+      "syncStatus": {
+        "blockNumber": 519232289,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    },
+    {
+      "marketId": 222,
+      "collateral": "WBTC",
+      "takerAction": "long-YU-lift-asks",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.055761545593681766,
+      "syncStatus": {
+        "blockNumber": 519232289,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    },
+    {
+      "marketId": 233,
+      "collateral": "WBTC",
+      "takerAction": "short-YU-hit-bids",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.030600000000000002,
+      "syncStatus": {
+        "blockNumber": 519232290,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    },
+    {
+      "marketId": 233,
+      "collateral": "WBTC",
+      "takerAction": "long-YU-lift-asks",
+      "requestedYu": "1",
+      "filledRaw": "1000000000000000000",
+      "full": true,
+      "approximateFilledApr": 0.031200000000000002,
+      "syncStatus": {
+        "blockNumber": 519232290,
+        "timestamp": 1793240236
+      },
+      "classification": "bucketed-depth-estimate-not-simulation"
+    }
+  ],
+  "limitations": [
+    "Snapshot is not a live feed.",
+    "Candidate count is not executable opportunity count.",
+    "Floating observations require epoch alignment.",
+    "Depth samples are separate snapshots and have no atomic execution guarantee.",
+    "No wallet, trade, full-history, or account-margin validation was performed."
+  ]
+}

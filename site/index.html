@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d1418">
+  <meta name="description" content="Boros 全市场资金费率价差看板。比较跨交易所合成价差、原生价差、双腿深度与实际资金费率。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api-boros.pendle.finance; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>BorosSpread · 价差观察站</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true"><defs>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4zM3 12l9 4 9-4M3 17l9 4 9-4"/></symbol>
+    <symbol id="i-matrix" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9h16M4 15h16M9 4v16M15 4v16"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 6.1A8 8 0 0 1 20 12M4 12a8 8 0 0 0 13.9 5.9"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L11 13M10 5H4v15h15v-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+  </defs></svg>
+  <a class="skip" href="#main">跳到行情</a>
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="BorosSpread 首页"><img src="./favicon.svg" width="35" height="35" alt=""><span>BOROS<span class="brand-light">SPREAD</span><small>价差观察站</small></span></a>
+    <div class="nav-label">工作台 / WORKSPACE</div>
+    <nav aria-label="主导航">
+      <button class="nav-item active" data-view="spreads"><svg><use href="#i-grid"/></svg><span>全市场价差</span><span class="nav-count" id="nav-count">—</span></button>
+      <button class="nav-item" data-view="native"><svg><use href="#i-layers"/></svg><span>原生 / 合成对比</span></button>
+      <button class="nav-item" data-view="funding"><svg><use href="#i-matrix"/></svg><span>资金费率矩阵</span></button>
+      <button class="nav-item" data-view="favorites"><svg><use href="#i-star"/></svg><span>我的关注</span></button>
+    </nav>
+    <div class="sidebar-bottom"><div class="read-only"><span class="tiny-dot"></span>公开行情 · 无需连接钱包</div><p>看清利率的另一面。<br>发现价差，理解风险。</p><button class="method-button" data-action="method"><svg><use href="#i-info"/></svg>计算口径与数据来源<svg><use href="#i-arrow"/></svg></button><a href="https://boros.pendle.finance/" target="_blank" rel="noopener noreferrer">打开 Boros 官方交易页 ↗</a><div class="sidebar-foot">INDEPENDENT RESEARCH DASHBOARD</div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">工作台 <span>/</span> <strong id="breadcrumb">全市场价差</strong></div><div class="top-actions"><span id="feed-status" class="feed-status"><i></i>正在连接行情</span><button class="icon-button" id="refresh" aria-label="刷新行情" title="刷新行情"><svg><use href="#i-refresh"/></svg></button><button class="help-button" data-action="method" aria-label="计算说明"><svg><use href="#i-info"/></svg></button></div></header>
+    <main id="main" tabindex="-1">
+      <section class="page-heading"><div><div class="eyebrow"><span></span> THE RATE BETWEEN</div><h1 id="page-title">跨交易所，<span>发现价差。</span></h1><p id="page-subtitle">连接 Boros 单腿市场，让每一种费率差都有迹可循。</p></div><div class="heading-side"><span class="network-dot"></span> Arbitrum <span class="divider">/</span> 只读观察<span id="last-updated">等待数据</span></div></section>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <section class="metrics" aria-label="市场概览" id="metrics"><div class="metric"><span>合成价差组合 <small>PAIRS</small></span><strong>—</strong><p>正在获取市场数据</p></div><div class="metric"><span>交易所覆盖 <small>VENUES</small></span><strong>—</strong><p>公开市场动态发现</p></div><div class="metric"><span>原生价差市场 <small>NATIVE</small></span><strong>—</strong><p>独立订单簿与保证金</p></div><div class="metric"><span>当前分组最大参考差 <small>SPREAD</small></span><strong>—</strong><p>盘口参考 · 非收益承诺</p></div></section>
+      <section class="market-toolbar" aria-label="行情筛选"><div class="asset-tabs" id="asset-tabs" role="group" aria-label="标的"><button data-asset="BTC" class="active"><span class="coin btc">₿</span>BTC</button><button data-asset="ETH"><span class="coin eth">Ξ</span>ETH</button><button data-asset="HYPE"><span class="coin hype">H</span>HYPE</button></div><div class="group-controls"><label>到期日<select id="expiry" aria-label="到期日"></select></label><label>抵押品<select id="collateral" aria-label="抵押品"></select></label></div></section>
+      <section id="spreads-view">
+        <div class="panel table-panel"><div class="panel-heading"><div><h2 id="table-title">全部合成价差 <span id="pair-count" class="count-badge">—</span></h2><p>固定方向 A − B · 同标的、同抵押品、同到期日</p></div><button id="export" class="text-button"><svg><use href="#i-download"/></svg><span>导出 CSV</span></button></div>
+          <div class="table-tools"><label class="search"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="搜索交易所或组合" aria-label="搜索交易所或组合" autocomplete="off"></label><div class="sort-control"><label for="sort">排序</label><select id="sort"><option value="bid">做空参考差 ↓</option><option value="mid">中间价差 ↓</option><option value="name">交易所名称</option></select></div></div>
+          <div id="spread-table" aria-live="polite"><div class="empty-state">正在读取 Boros 公开市场…</div></div>
+          <div class="table-bottom"><span id="table-summary">—</span><div class="pagination"><button id="prev" aria-label="上一页">←</button><span id="page-number">1 / 1</span><button id="next" aria-label="下一页">→</button></div></div>
+        </div>
+        <div class="detail-grid" id="detail-area"><section class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow subtle">SPREAD HISTORY</div><h2 id="chart-title">选择一个价差组合</h2></div><div class="range-tabs" role="group" aria-label="历史范围"><button data-days="1">1D</button><button data-days="7" class="active">7D</button><button data-days="30">30D</button></div></div><div class="chart-value"><strong id="chart-current">—</strong><span>Mark APR 差 · 估值参考</span></div><div id="history-chart" class="history-chart"><div class="chart-empty">选择组合查看历史走势</div></div><div id="chart-stats" class="chart-stats"></div></section>
+          <section class="panel quote-panel"><div class="panel-heading"><div><div class="eyebrow subtle">TWO-LEG ESTIMATE</div><h2>双腿深度估算</h2></div><span class="small-tag" id="quote-state">等待读取</span></div><div class="direction-tabs" role="group" aria-label="价差方向"><button data-direction="short" class="active">做空价差</button><button data-direction="long">做多价差</button></div><label class="notional-label" for="notional">每腿名义金额 <span>USD</span></label><div class="amount-input"><span>$</span><input id="notional" type="number" min="1" max="100000000" step="1000" value="10000" inputmode="decimal" aria-label="每腿名义金额（美元）"></div><div class="amount-presets"><button data-amount="1000">$1K</button><button data-amount="10000" class="active">$10K</button><button data-amount="100000">$100K</button></div><div id="quote-content"><div class="empty-state compact">选择组合查看两腿</div></div></section></div>
+      </section>
+      <section id="native-view" hidden><div class="panel"><div class="panel-heading"><div><h2>同一价差，两种结构</h2><p>原生盘口与双腿合成盘口并列比较，利率均为年化参考。</p></div><span class="small-tag">HL − Gate</span></div><div id="native-content"></div></div><div class="explain-grid"><article><span>01</span><h3>原生价差</h3><p>一张订单簿，一个净价差仓位。按净价差计提保证金与清算风险。</p></article><article><span>02</span><h3>双腿合成</h3><p>分别交易 A、B 的资金费率。覆盖更多组合，两腿独立计提市场风险。</p></article><article><span>03</span><h3>比较真正的买卖价</h3><p>卖原生与买合成、卖合成与买原生分别比较，再核实规模、费用和计息区间。</p></article></div></section>
+      <section id="funding-view" hidden><div class="panel"><div class="panel-heading"><div><h2><span id="funding-asset">BTC</span> 资金费率观察</h2><p>交易所已结算数据 · 来源为 Boros 费率数据集 · 不同时点仅供参考</p></div><button class="text-button" id="refresh-funding"><svg><use href="#i-refresh"/></svg>更新费率</button></div><div id="funding-content"><div class="empty-state">切换到此页后读取资金费率</div></div></div><div class="panel heatmap-panel"><div class="panel-heading"><div><h2>交易所费率差矩阵</h2><p>行交易所 − 列交易所 · 统一为 APR · 最近结算时点可能不同</p></div><span class="heat-legend"><i></i>负差 <i></i>正差</span></div><div id="heatmap"></div></div></section>
+      <footer><span><span class="tiny-dot"></span> 公开数据 · 本地收藏 · 无交易权限</span><button data-action="method">隐含价差 ≠ 确定收益 <svg><use href="#i-info"/></svg></button><span>BOROSSPREAD <span class="muted">/ 2026</span></span></footer>
+    </main>
+  </div>
+  <dialog id="method-dialog"><div class="dialog-heading"><div><div class="eyebrow">BEFORE YOU COMPARE</div><h2>看懂价差，再看机会。</h2></div><button id="close-dialog" class="close-button" aria-label="关闭说明">×</button></div><div class="dialog-body"><h3>这里展示什么？</h3><p>本看板将同标的、同抵押品、同到期日的 Boros 单腿市场组成 A−B。中间价、盘口价、指定金额深度估算分别展示。BorosSpread 为独立研究工具，与 Pendle 无隶属关系。</p><h3>方向与现金流</h3><p>做空 A−B：Short A、Long B，收取固定差，支付浮动差。做多则相反。仅持有 Boros 两腿，不构成固定收益；外部永续对冲的成本和风险需要另行核实。</p><h3>报价与费用</h3><p>深度采用官方聚合盘口，APR=ia×tickSize，size 为 18 位 YU 会计单位。VWAP 是分桶估算，不保证两腿同时成交。费用卡计入两条订单簿 taker 费用及估计持有至到期的结算费，不包含首次进入市场费、gas、外部永续成本或 AMM 额外费用。固定腿金额不代表净利润。</p><h3>数据与时效</h3><p>浏览器直接读取 Boros 官方 API。自动刷新仅在页面可见时每 60 秒运行；历史数据缓存 5 分钟。接口不可用时显示最近本地缓存或随站点发布的快照，并保留原始时间。资金费率矩阵使用各交易所最近已结算样本，各源时间不同，不能直接视为可成交套利。</p><h3>风险与隐私</h3><p>币本位抵押资产本身有价格风险。两腿存在各自保证金、清算和成交风险。收藏仅保存在当前浏览器。本看板不连接钱包，不索取交易所密钥，不提交交易。</p><div class="source-links"><a href="https://docs.pendle.finance/boros-docs/about-boros/spread-markets" target="_blank" rel="noopener noreferrer">Boros 价差机制 ↗</a><a href="https://api-boros.pendle.finance/apis/docs" target="_blank" rel="noopener noreferrer">官方数据接口 ↗</a><a href="https://docs.pendle.finance/boros-docs/boros-systems/fees" target="_blank" rel="noopener noreferrer">费用与风险口径 ↗</a></div></div></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

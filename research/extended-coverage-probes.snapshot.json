@@ -1,0 +1,23 @@
+[
+  {
+    "exchange": "Hyperliquid",
+    "status": 200,
+    "url": "https://api-boros.pendle.finance/apis/v1/markets/historical-underlying-apr?assetSymbol=BTC&exchange=Hyperliquid&timeFrame=3600&startTimestamp=1793145600",
+    "fetchedAt": "2026-10-29T02:21:35.9641731+00:00",
+    "bytes": 1552
+  },
+  {
+    "exchange": "Bitget",
+    "status": 200,
+    "url": "https://api-boros.pendle.finance/apis/v1/markets/historical-underlying-apr?assetSymbol=BTC&exchange=Bitget&timeFrame=3600&startTimestamp=1793145600",
+    "fetchedAt": "2026-10-29T02:21:36.4655124+00:00",
+    "bytes": 266
+  },
+  {
+    "exchange": "Deribit",
+    "status": 200,
+    "url": "https://api-boros.pendle.finance/apis/v1/markets/historical-underlying-apr?assetSymbol=BTC&exchange=Deribit&timeFrame=3600&startTimestamp=1793145600",
+    "fetchedAt": "2026-10-29T02:21:36.8658510+00:00",
+    "bytes": 300
+  }
+]

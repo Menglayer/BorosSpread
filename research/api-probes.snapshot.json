@@ -1,0 +1,74 @@
+[
+  {
+    "name": "assets",
+    "status": 200,
+    "cu": "1",
+    "fetchedAt": "2026-10-29T02:17:15.0035025+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/assets",
+    "bytes": 3265
+  },
+  {
+    "name": "funding-symbols",
+    "status": 200,
+    "cu": "1",
+    "fetchedAt": "2026-10-29T02:17:15.5208191+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/funding-rate/all-funding-rate-symbols",
+    "bytes": 6341
+  },
+  {
+    "name": "book-220",
+    "status": 200,
+    "cu": "2",
+    "fetchedAt": "2026-10-29T02:17:16.0899805+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/markets/order-book?marketId=220&tickSize=0.0001&includeAmm=true",
+    "bytes": 1412
+  },
+  {
+    "name": "book-221",
+    "status": 200,
+    "cu": "2",
+    "fetchedAt": "2026-10-29T02:17:16.4919696+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/markets/order-book?marketId=221&tickSize=0.0001&includeAmm=true",
+    "bytes": 930
+  },
+  {
+    "name": "book-222",
+    "status": 200,
+    "cu": "2",
+    "fetchedAt": "2026-10-29T02:17:16.8857705+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/markets/order-book?marketId=222&tickSize=0.0001&includeAmm=true",
+    "bytes": 1146
+  },
+  {
+    "name": "book-233",
+    "status": 200,
+    "cu": "2",
+    "fetchedAt": "2026-10-29T02:17:17.2680287+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/markets/order-book?marketId=233&tickSize=0.0001&includeAmm=true",
+    "bytes": 1551
+  },
+  {
+    "name": "indicators-220",
+    "status": 200,
+    "cu": "3",
+    "fetchedAt": "2026-10-29T02:17:17.7402434+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/indicators?marketId=220&timeFrame=1h&select=u,mr,udma:7;30",
+    "bytes": 57119
+  },
+  {
+    "name": "indicators-222",
+    "status": 200,
+    "cu": "3",
+    "fetchedAt": "2026-10-29T02:17:18.2556127+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/indicators?marketId=222&timeFrame=1h&select=u,mr,udma:7;30",
+    "bytes": 57603
+  },
+  {
+    "name": "indicators-233",
+    "status": 200,
+    "cu": "3",
+    "fetchedAt": "2026-10-29T02:17:18.8364263+00:00",
+    "url": "https://api-boros.pendle.finance/apis/v1/indicators?marketId=233&timeFrame=1h&select=u,mr,udma:7;30",
+    "bytes": 55274
+  }
+]

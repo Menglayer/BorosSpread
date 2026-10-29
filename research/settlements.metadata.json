@@ -1,0 +1,15 @@
+{
+  "status": 201,
+  "cu": "6",
+  "fetchedAt": "2026-10-29T02:23:11.5525848+00:00",
+  "request": {
+    "fromTimestamp": 1793067536,
+    "toTimestamp": 1793240336,
+    "marketIds": [
+      220,
+      222,
+      233
+    ]
+  },
+  "url": "https://api-boros.pendle.finance/apis/v1/funding-rate/settlement-summary"
+}

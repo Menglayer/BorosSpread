@@ -1,0 +1,11 @@
+dist/
+node_modules/
+.env
+.env.*
+!.env.example
+test-results/
+*.log
+research/api-docs.html
+research/boros-openapi.snapshot.json
+research/boros-markets.raw.json
+research/lighter-funding-doc.snapshot.txt

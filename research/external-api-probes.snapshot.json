@@ -1,0 +1,58 @@
+[
+  {
+    "name": "binance-btc",
+    "status": 200,
+    "url": "https://fapi.binance.com/fapi/v1/premiumIndex?symbol=BTCUSDT",
+    "fetchedAt": "2026-10-29T02:19:55.6847858+00:00",
+    "bytes": 231
+  },
+  {
+    "name": "gate-btc",
+    "status": 200,
+    "url": "https://api.gateio.ws/api/v4/futures/usdt/contracts/BTC_USDT",
+    "fetchedAt": "2026-10-29T02:19:56.1850586+00:00",
+    "bytes": 1327
+  },
+  {
+    "name": "okx-btc",
+    "status": 200,
+    "url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
+    "fetchedAt": "2026-10-29T02:19:56.5301519+00:00",
+    "bytes": 524
+  },
+  {
+    "name": "bybit-hype",
+    "status": 200,
+    "url": "https://api.bybit.com/v5/market/tickers?category=linear&symbol=HYPEUSDT",
+    "fetchedAt": "2026-10-29T02:19:58.0324075+00:00",
+    "bytes": 871
+  },
+  {
+    "name": "kucoin-btc",
+    "status": 200,
+    "url": "https://api-futures.kucoin.com/api/v1/funding-rate/XBTUSDTM/current",
+    "fetchedAt": "2026-10-29T02:19:58.3965043+00:00",
+    "bytes": 260
+  },
+  {
+    "name": "lighter-rates",
+    "status": 200,
+    "url": "https://mainnet.zklighter.elliot.ai/api/v1/funding-rates",
+    "fetchedAt": "2026-10-29T02:19:58.7878217+00:00",
+    "bytes": 52450
+  },
+  {
+    "name": "lighter-funding-doc",
+    "status": 200,
+    "url": "https://docs.lighter.xyz/trading/funding.md",
+    "fetchedAt": "2026-10-29T02:19:59.6657219+00:00",
+    "bytes": 6916
+  },
+  {
+    "name": "hyperliquid-contexts",
+    "status": 200,
+    "url": "https://api.hyperliquid.xyz/info",
+    "fetchedAt": "2026-10-29T02:20:00.0760620+00:00",
+    "bytes": 72442
+  }
+]
